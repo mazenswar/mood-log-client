@@ -1,0 +1,33 @@
+$Fiord: #464871;
+$Bossanova: #3a244b;
+$MulledWine: #46436d;
+$Merino: #faf7f1;
+$Tiara: #c8d2d1;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $Merino;
+  color: $Fiord;
+}
+
+select:focus,
+input:focus {
+  outline: 0;
+}
+
+textarea {
+  resize: none;
+  font-size: 2vw;
+  &:focus {
+    outline: 0;
+  }
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}

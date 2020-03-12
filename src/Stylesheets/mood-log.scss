@@ -1,0 +1,160 @@
+@import 'master.scss';
+
+// $Fiord: #464871;
+// $Bossanova: #3a244b;
+// $MulledWine: #46436d;
+// $Merino: #faf7f1;
+// $Tiara: #c8d2d1;
+
+.mood-log-form {
+  padding: 1vw;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .buttons-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #262626;
+    // padding: 2vw;
+    // border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+    button {
+      color: $Merino;
+      background-color: inherit;
+      border: none;
+      padding: 2vw;
+      font-weight: bold;
+      transition: 0.8s;
+
+      &:focus {
+        outline: 0;
+      }
+      &:hover {
+        background-color: $Tiara;
+      }
+    }
+  }
+  .event-textarea-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    align-self: center;
+    textarea {
+      padding: 20px;
+      border: 1px solid $Fiord;
+      border-radius: 20px;
+    }
+  }
+  .emotions-form-page {
+    height: 100%;
+  }
+
+  .emotions-display-container {
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3vw;
+    .single-emotion-container {
+      border: 1px solid $Merino;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      width: 100%;
+      // height: 10vh;
+      div {
+        grid-column: 2;
+        background-color: #464871;
+        display: flex;
+        align-items: center;
+      }
+      p {
+        background-color: $Fiord;
+        color: $Merino;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+      }
+      h5 {
+        padding: 3vh;
+        grid-column: 1;
+        text-align: center;
+        border: 1px solid $Fiord;
+        height: 100%;
+        margin: 0;
+      }
+    }
+  }
+  .emotion-input-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid $Fiord;
+    margin: 1% 3vw;
+    input {
+      height: 80%;
+    }
+  }
+  //////////////////////////////
+
+  .triple-column-container {
+    height: 100%;
+    //   display: flex;
+    //   flex-direction: column;
+    //   flex-wrap: wrap;
+    .thought-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      border: 1px solid red;
+      .thought-row {
+        border: 1px solid black;
+        padding: 1%;
+        margin: 1% 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .title-span {
+          width: 15%;
+          text-align: end;
+          padding-right: 1%;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////////
+
+.outcome-selection {
+  transition: 0.5s;
+  padding: 2%;
+  width: 50%;
+  margin: 1% auto;
+  text-align: center;
+  border: 1px solid $Fiord;
+  &:hover {
+    background-color: $Fiord;
+    color: $Merino;
+  }
+}
+
+.submit-log-button {
+  background-color: $Fiord;
+  color: $Merino;
+  padding: 2vh;
+  width: 20%;
+  align-self: center;
+  border-radius: 50px;
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
